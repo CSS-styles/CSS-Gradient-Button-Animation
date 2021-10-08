@@ -1,0 +1,43 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100%;
+	background-color: #262626FF;
+}
+div{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100px;
+	width: 300px;
+	color: white;
+	font-size: 50px;
+	font-weight: bold;
+	font-family: sans-serif;
+	letter-spacing: 1px;
+	box-shadow: 1px 1px 40px black;
+	border-radius: 20px;
+}
+div:hover{
+	cursor: pointer;
+	animation: gradient 2s linear infinite;
+}
+@keyframes gradient{
+	0%{
+		background: linear-gradient(45deg,yellow,coral);
+		filter: hue-rotate(0deg);
+		box-shadow: 1px 1px 40px coral;
+	}
+	100%{
+		background: linear-gradient(45deg,yellow,coral);
+		filter: hue-rotate(360deg);
+		box-shadow: 1px 1px 60px coral;
+	}
+}
